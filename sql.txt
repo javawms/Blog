@@ -1,0 +1,17 @@
+create database blog;
+create table myblog(
+	id int primary key auto_increment,
+	title varchar(128) not null,
+	blog text not null,
+	tag varchar(128),
+	sort varchar(128),
+	createTime varchar(32) not null
+);
+
+create table sort(
+	id int primary key auto_increment,
+	sort varchar(32) not null
+);
+
+insert into sort (sort) value ("Ä¬ÈÏ·ÖÀà");
+
